@@ -1,0 +1,1157 @@
+ERROR - 2026-06-18 18:07:31 --> Unknown column 'anggota.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 5 APPPATH\Controllers\Peminjaman.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:07:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'anggota.user_id' in 'on clause'
+[Method: GET, Route: peminjaman]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 2 APPPATH\Controllers\Peminjaman.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:07:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'anggota.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 4 APPPATH\Controllers\Peminjaman.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:07:31 --> [Caused by] mysqli_sql_exception: Unknown column 'anggota.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 5 APPPATH\Controllers\Peminjaman.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+ERROR - 2026-06-18 18:11:55 --> Unknown column 'anggota.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 5 APPPATH\Controllers\Peminjaman.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:11:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'anggota.user_id' in 'on clause'
+[Method: GET, Route: peminjaman]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 2 APPPATH\Controllers\Peminjaman.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:11:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'anggota.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 4 APPPATH\Controllers\Peminjaman.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:11:55 --> [Caused by] mysqli_sql_exception: Unknown column 'anggota.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 5 APPPATH\Controllers\Peminjaman.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+ERROR - 2026-06-18 18:12:07 --> Unknown column 'anggota.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 5 APPPATH\Controllers\Peminjaman.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:12:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'anggota.user_id' in 'on clause'
+[Method: GET, Route: peminjaman]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 2 APPPATH\Controllers\Peminjaman.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:12:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'anggota.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 4 APPPATH\Controllers\Peminjaman.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:12:07 --> [Caused by] mysqli_sql_exception: Unknown column 'anggota.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 5 APPPATH\Controllers\Peminjaman.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+ERROR - 2026-06-18 18:12:25 --> Unknown column 'anggota.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 5 APPPATH\Controllers\Peminjaman.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:12:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'anggota.user_id' in 'on clause'
+[Method: GET, Route: peminjaman]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 2 APPPATH\Controllers\Peminjaman.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:12:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'anggota.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 4 APPPATH\Controllers\Peminjaman.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:12:25 --> [Caused by] mysqli_sql_exception: Unknown column 'anggota.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 5 APPPATH\Controllers\Peminjaman.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+ERROR - 2026-06-18 18:16:07 --> Unknown column 'anggota.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 5 APPPATH\Controllers\Peminjaman.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:16:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'anggota.user_id' in 'on clause'
+[Method: GET, Route: peminjaman]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 2 APPPATH\Controllers\Peminjaman.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:16:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'anggota.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 4 APPPATH\Controllers\Peminjaman.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:16:07 --> [Caused by] mysqli_sql_exception: Unknown column 'anggota.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 5 APPPATH\Controllers\Peminjaman.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+ERROR - 2026-06-18 18:19:56 --> Unknown column 'anggota.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 5 APPPATH\Controllers\Peminjaman.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:19:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'anggota.user_id' in 'on clause'
+[Method: GET, Route: peminjaman]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 2 APPPATH\Controllers\Peminjaman.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:19:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'anggota.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 4 APPPATH\Controllers\Peminjaman.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:19:56 --> [Caused by] mysqli_sql_exception: Unknown column 'anggota.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 5 APPPATH\Controllers\Peminjaman.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+ERROR - 2026-06-18 18:20:03 --> Unknown column 'anggota.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 5 APPPATH\Controllers\Peminjaman.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:20:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'anggota.user_id' in 'on clause'
+[Method: GET, Route: peminjaman]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 2 APPPATH\Controllers\Peminjaman.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:20:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'anggota.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 4 APPPATH\Controllers\Peminjaman.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:20:03 --> [Caused by] mysqli_sql_exception: Unknown column 'anggota.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `anggota`.`nama`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `anggota` ON `anggota`.`user_id` = `peminjaman`.`user_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 5 APPPATH\Controllers\Peminjaman.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+ERROR - 2026-06-18 18:36:10 --> Unknown column 'buku.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 5 APPPATH\Controllers\Peminjaman.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:36:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'buku.id' in 'on clause'
+[Method: GET, Route: peminjaman]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 2 APPPATH\Controllers\Peminjaman.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:36:10 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'buku.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 4 APPPATH\Controllers\Peminjaman.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:36:10 --> [Caused by] mysqli_sql_exception: Unknown column 'buku.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 5 APPPATH\Controllers\Peminjaman.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+ERROR - 2026-06-18 18:36:14 --> Unknown column 'buku.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 5 APPPATH\Controllers\Peminjaman.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:36:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'buku.id' in 'on clause'
+[Method: GET, Route: peminjaman]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 2 APPPATH\Controllers\Peminjaman.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:36:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'buku.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 4 APPPATH\Controllers\Peminjaman.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:36:14 --> [Caused by] mysqli_sql_exception: Unknown column 'buku.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 5 APPPATH\Controllers\Peminjaman.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+ERROR - 2026-06-18 18:36:16 --> Unknown column 'buku.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 5 APPPATH\Controllers\Peminjaman.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:36:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'buku.id' in 'on clause'
+[Method: GET, Route: peminjaman]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 2 APPPATH\Controllers\Peminjaman.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:36:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'buku.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 4 APPPATH\Controllers\Peminjaman.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:36:16 --> [Caused by] mysqli_sql_exception: Unknown column 'buku.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 5 APPPATH\Controllers\Peminjaman.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+ERROR - 2026-06-18 18:36:16 --> Unknown column 'buku.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 5 APPPATH\Controllers\Peminjaman.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:36:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'buku.id' in 'on clause'
+[Method: GET, Route: peminjaman]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 2 APPPATH\Controllers\Peminjaman.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:36:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'buku.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 4 APPPATH\Controllers\Peminjaman.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:36:16 --> [Caused by] mysqli_sql_exception: Unknown column 'buku.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 5 APPPATH\Controllers\Peminjaman.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+ERROR - 2026-06-18 18:36:17 --> Unknown column 'buku.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 5 APPPATH\Controllers\Peminjaman.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:36:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'buku.id' in 'on clause'
+[Method: GET, Route: peminjaman]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 2 APPPATH\Controllers\Peminjaman.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:36:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'buku.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 4 APPPATH\Controllers\Peminjaman.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:36:17 --> [Caused by] mysqli_sql_exception: Unknown column 'buku.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 5 APPPATH\Controllers\Peminjaman.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+ERROR - 2026-06-18 18:36:17 --> Unknown column 'buku.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 5 APPPATH\Controllers\Peminjaman.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:36:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'buku.id' in 'on clause'
+[Method: GET, Route: peminjaman]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 2 APPPATH\Controllers\Peminjaman.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:36:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'buku.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 4 APPPATH\Controllers\Peminjaman.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 18:36:17 --> [Caused by] mysqli_sql_exception: Unknown column 'buku.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `peminjaman`.*, `users`.`nama`, `users`.`username`, `buku`.`judul`
+FROM `peminjaman`
+LEFT JOIN `users` ON `buku`.`id` = `peminjaman`.`bukuu_id`
+LEFT JOIN `buku` ON `buku`.`id` = `peminjaman`.`buku_id`', [], false)
+ 5 APPPATH\Controllers\Peminjaman.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Peminjaman->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\public\\index.php')
