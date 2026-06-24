@@ -344,16 +344,14 @@ http://localhost:3000
 Demo aplikasi:
 
 ```
-(Tambahkan link hosting/demo aplikasi)
+(https://youtu.be/2rz3Ym8oNbU?si=HCtImOLFNlcivIEn)
 ```
 
 # Link Video Presentasi
 
 Video presentasi:
 
-```
-(Tambahkan link Youtube/Drive video presentasi)
-```
+[klik ini untuk melanjutkan video prresentasi](https://youtu.be/2rz3Ym8oNbU?si=HCtImOLFNlcivIEn)
 
 ---
 
