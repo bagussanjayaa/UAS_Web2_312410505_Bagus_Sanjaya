@@ -112,7 +112,8 @@ Atribut:
 * status
 
 Screenshot:
-**(Lampirkan screenshot phpMyAdmin Designer yang menunjukkan relasi tabel)**
+
+![foto](foto/01.png)
 
 ---
 
@@ -141,7 +142,8 @@ Response:
 Hal ini menunjukkan bahwa endpoint dashboard admin hanya dapat diakses oleh user yang sudah melakukan login dan memiliki token autentikasi.
 
 Screenshot:
-**(Lampirkan screenshot Postman ketika muncul error 401 akibat token tidak dikirim)**
+
+![foto](foto/02.png)
 
 ---
 
@@ -159,7 +161,8 @@ Fitur:
 * Redirect berdasarkan role user
 
 Screenshot:
-**(Lampirkan halaman login)**
+
+![foto](foto/05.png)
 
 ---
 
@@ -181,7 +184,8 @@ Selain itu terdapat menu:
 * Kelola Peminjaman
 
 Screenshot:
-**(Lampirkan dashboard admin)**
+
+![foto](foto/06.png)
 
 ---
 
@@ -208,7 +212,10 @@ Input:
 Admin dapat memperbarui data tanpa berpindah halaman.
 
 Screenshot:
-**(Lampirkan modal tambah/edit)**
+
+![foto](foto/08.png)
+
+![foto](foto/09.png)
 
 ---
 
@@ -230,7 +237,8 @@ Tabel Buku:
 | 1  | naruto.jpg  | Naruto | Masashi | Shueisha | Action |  10  | Edit / Hapus|
 
 Screenshot:
-**(Lampirkan tampilan tabel dengan TailwindCSS)**
+
+![foto](foto/07.png)
 
 ---
 
@@ -287,6 +295,8 @@ Backend berjalan pada:
 http://localhost:8080
 ```
 
+![foto](foto/11.png)
+
 ---
 
 ## B. Menjalankan Frontend (Vue.js)
@@ -314,6 +324,8 @@ Frontend berjalan pada:
 ```
 http://localhost:3000
 ```
+
+![foto](foto/10.png)
 
 ---
 
@@ -343,9 +355,7 @@ http://localhost:3000
 
 Demo aplikasi:
 
-```
-(https://youtu.be/2rz3Ym8oNbU?si=HCtImOLFNlcivIEn)
-```
+[klik ini untuk melanjutkan video Demo Aplikasi](https://youtu.be/SYeDl5NhJ94?si=kwyayPcaQfsxrVqL)
 
 # Link Video Presentasi
 
